@@ -1,7 +1,7 @@
 # linux_debian
 
+To update
+
 ```
 sudo apt update
 ```
-
-Hi Im cse
