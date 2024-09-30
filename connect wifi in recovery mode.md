@@ -75,7 +75,7 @@ ping google.com
 
 If the ping command returns responses, your internet connection is working.
 
-[If you cannot ping `google.com` ? check ]()
+[If you cannot ping `google com` ? check ](https://github.com/kabyadeb/linux_debian/blob/main/%23%23%23%20If%20you%20cannot%20ping%20%60google.md)
 
 ### 9. Exit Recovery Mode
 
