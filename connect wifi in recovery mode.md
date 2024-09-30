@@ -56,8 +56,7 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
 ### 7. Obtain an IP Address
 
 Once the `wpa_supplicant` process is running, you need to obtain an IP address using the DHCP client.
-
-     Run the following command to request an IP address:
+Run the following command to request an IP address:
 
 ```bash
 dhclient wlan0
