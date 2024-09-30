@@ -16,7 +16,7 @@ Connecting to a Wi-Fi network in recovery mode on Ubuntu involves a few steps us
   ```
   ip a
   ```
-- Look for an interface that resembles `wlan0` or similar.It may differ in different computer
+- Look for an interface that resembles `wlan0` or similar.(Replace `wlan0` with your actual wireless interface name.)
 
 ### 4. Install `wpa_supplicant` (if necessary)
 
@@ -43,27 +43,27 @@ After creating the `wpa_supplicant.conf` file, you need to use it to connect to 
 
 Now that you have created the Wi-Fi configuration file, you can start the `wpa_supplicant` service to connect to the network.
 
-1. Run `wpa_supplicant` with the configuration file you created. Replace `wlan0` with your actual wireless interface name if it is different:
+Run `wpa_supplicant` with the configuration file you created. Replace `wlan0` with your actual wireless interface name if it is different:
 
-   ```bash
-   wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
-   ```
+```bash
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+```
 
-   - `-B` makes `wpa_supplicant` run in the background.
-   - `-i wlan0` specifies the wireless interface.
-   - `-c /etc/wpa_supplicant.conf` specifies the path to the configuration file.
+- `-B` makes `wpa_supplicant` run in the background.
+- `-i wlan0` specifies the wireless interface.(🤔 it may differ in your computer system.)
+- `-c /etc/wpa_supplicant.conf` specifies the path to the configuration file.
 
 ### 7. Obtain an IP Address
 
 Once the `wpa_supplicant` process is running, you need to obtain an IP address using the DHCP client.
 
-2. Run the following command to request an IP address:
+     Run the following command to request an IP address:
 
-   ```bash
-   dhclient wlan0
-   ```
+```bash
+dhclient wlan0
+```
 
-   This will assign your system an IP address if the connection to the network is successful.
+This will assign your system an IP address if the connection to the network is successful.
 
 ### 8. Verify the Connection
 
@@ -74,6 +74,8 @@ ping google.com
 ```
 
 If the ping command returns responses, your internet connection is working.
+
+[If you cannot ping `google.com` ? check ]()
 
 ### 9. Exit Recovery Mode
 
