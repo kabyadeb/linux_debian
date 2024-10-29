@@ -1,10 +1,13 @@
 <h1 align="center"> 
   Linux in daily use </h1>
 <div align="center">
-  [![GitHub Follow](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]
+  <a href="https://github.com/kabyadeb/">
+      Follow on Github
+    </a>
 
 </div>
 To update
+
 ```
 sudo apt update
 ```
@@ -27,3 +30,4 @@ Example command: `pdfunite input1.pdf input2.pdf output.pdf`
 #### Question 2 : Can we connect or access internet in recovery mode on Ubuntu ?
 Here is my answer 
 [Connecting to a Wi-Fi network in recovery mode on Ubuntu](https://github.com/kabyadeb/linux_debian/blob/main/connect%20wifi%20in%20recovery%20mode.md)
+
