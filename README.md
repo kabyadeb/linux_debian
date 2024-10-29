@@ -1,14 +1,14 @@
 <h1 align="center"> 
   Linux in daily use </h1>
 <div align="center">
-  [![GitHub Follow](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kabyadeb)
+  [![GitHub Follow](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]
 
 </div>
 To update
 ```
 sudo apt update
 ```
-## FAQ
+
 #### Question 1 : Can we marge multiple PDFs in ubuntu through terminal ?
 The answer is Yes. 
 there are multiple tools we can use. Here I will discuss about `poppler` tool.
