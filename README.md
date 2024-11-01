@@ -11,6 +11,19 @@ To update
 ```
 sudo apt update
 ```
+Remove unused packages:
+```
+sudo apt autoremove --purge
+```
+Clear old kernels (be careful with this):
+```
+sudo apt --purge autoremove
+```
+Clean up package cache:
+```
+sudo apt clean
+```
+
 
 #### Question 1 : Can we marge multiple PDFs in ubuntu through terminal ?
 The answer is Yes. 
