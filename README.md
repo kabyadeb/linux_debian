@@ -23,7 +23,10 @@ Clean up package cache:
 ```
 sudo apt clean
 ```
-
+ Check your current swap size with RAM:
+ ```
+free -h
+```
 
 #### Question 1 : Can we marge multiple PDFs in ubuntu through terminal ?
 The answer is Yes. 
