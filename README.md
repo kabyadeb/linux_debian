@@ -51,7 +51,7 @@ Here is my answer
 
 So , We can do this by using different tools like `pdftk`,`qpdf` or `pdfseparate`.
 
-<1> Using `pdftk` (Personally I recommand this )
+- 1 Using `pdftk` (Personally I recommand this )
 step 1 :
 ```
 sudo apt install pdftk
@@ -102,7 +102,7 @@ If the file name contains spaces, enclose it in quotes:
 pdftk "my file.pdf" cat 1-3 output "trimmed file.pdf"
 ```
 
-<2> Using `qpdf`
+- 2 Using `qpdf`
 Install pdftk:
 ```
 sudo apt install pdftk
@@ -113,7 +113,7 @@ pdftk input.pdf cat 1-5 7 10-12 output output.pdf
 ```
 Replace 1-5 7 10-12 with the range(s) or individual pages you need.
 
-<3> Using `pdfseparate`
+- 3 Using `pdfseparate`
 Install poppler-utils:
 ```
 sudo apt install poppler-utils
