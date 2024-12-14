@@ -51,7 +51,7 @@ Here is my answer
 
 So , We can do this by using different tools like `pdftk`,`qpdf` or `pdfseparate`.
 
-Using `pdftk`
+<1> Using `pdftk` (Personally I recommand this )
 step 1 :
 ```
 sudo apt install pdftk
@@ -63,62 +63,71 @@ pdftk input_file_name.pdf cat 1-5 7 10-12 output output_file_name_you_want_to_cr
 Specifying Page Ranges
 Extract a Range of Pages
 To extract pages 1 through 5:
-
-bash
-Copy code
+```
 pdftk input.pdf cat 1-5 output output.pdf
+```
 Extract Specific Pages
 To extract only pages 2, 4, and 6:
-
-bash
-Copy code
+```
 pdftk input.pdf cat 2 4 6 output output.pdf
+```
 Combine Ranges and Individual Pages
 To extract pages 1 through 5, page 7, and pages 10 through 12:
-
-bash
-Copy code
+```
 pdftk input.pdf cat 1-5 7 10-12 output output.pdf
-Reverse the Page Order
+```
+Reverse the Page Order:
 To reverse the order of pages 1 through 5:
-
-bash
-Copy code
+```
 pdftk input.pdf cat 5-1 output output.pdf
-Extract All Pages
+```
+Extract All Pages :
 If you want to copy the entire file (e.g., to test extraction):
 
-bash
-Copy code
+```
 pdftk input.pdf cat 1-end output output.pdf
+````
 Examples
 Extract the first three pages:
-bash
-Copy code
+```
 pdftk document.pdf cat 1-3 output first_three_pages.pdf
+```
 Extract non-consecutive pages (e.g., 2, 5, and 8):
-bash
-Copy code
+```
 pdftk document.pdf cat 2 5 8 output selected_pages.pdf
-Combine ranges and single pages (e.g., 1–4 and 6):
-bash
-Copy code
-pdftk document.pdf cat 1-4 6 output combined_selection.pdf
-Tips
+```
+_Tips_
 If the file name contains spaces, enclose it in quotes:
-bash
-Copy code
+```
 pdftk "my file.pdf" cat 1-3 output "trimmed file.pdf"
+```
 
+<2> Using `qpdf`
+Install pdftk:
+```
+sudo apt install pdftk
+```
+Extract specific pages:
+```
+pdftk input.pdf cat 1-5 7 10-12 output output.pdf
+```
+Replace 1-5 7 10-12 with the range(s) or individual pages you need.
 
-
-
-
-
-
-
-
-
+<3> Using `pdfseparate`
+Install poppler-utils:
+```
+sudo apt install poppler-utils
+```
+Extract pages: To split the PDF into individual pages:
+```
+pdfseparate input.pdf page-%d.pdf
+```
+This creates page-1.pdf, page-2.pdf, etc.
+_tips_
+Combine the required pages (optional): Use pdfunite (also from poppler-utils) to merge the pages:
+```
+pdfunite page-1.pdf page-2.pdf output.pdf
+```
 
 
 
