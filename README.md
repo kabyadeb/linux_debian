@@ -1,4 +1,4 @@
-<h1 align="center"> 
+<h1 align="center" color="green"> 
   Linux in daily use </h1>
 <div align="center">
   <a href="https://github.com/kabyadeb/">
@@ -128,6 +128,21 @@ Combine the required pages (optional): Use pdfunite (also from poppler-utils) to
 ```
 pdfunite page-1.pdf page-2.pdf output.pdf
 ```
+<h5 align="center">  TMUX</h5> 
+Modification for mouse flexibility :
+```
+nano ~/.tmux.conf
+```
+over there write :
+```
+set -g mouse on
+```
+after that ctrl+s -> ctrl+x
+and then 
+```
+tmux source-file ~/.tmux.conf
+```
+
 
 
 
